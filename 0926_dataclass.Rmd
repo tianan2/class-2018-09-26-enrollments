@@ -17,10 +17,10 @@ x <- read_rds("enrollment.rds") %>%
   select(course_department, course_name, u_grad) %>% 
   arrange(desc(u_grad)) %>% 
   slice(1:10)
-  
 ```
 
 ```{r}
 x %>% kable(caption = "Most Popular Classes" )
 ```
+
 
